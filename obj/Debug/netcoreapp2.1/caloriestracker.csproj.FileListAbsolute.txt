@@ -1,0 +1,11 @@
+C:\Users\niaan\source\repos\caloriestracker\caloriestracker\bin\Debug\netcoreapp2.1\caloriestracker.deps.json
+C:\Users\niaan\source\repos\caloriestracker\caloriestracker\bin\Debug\netcoreapp2.1\caloriestracker.runtimeconfig.json
+C:\Users\niaan\source\repos\caloriestracker\caloriestracker\bin\Debug\netcoreapp2.1\caloriestracker.runtimeconfig.dev.json
+C:\Users\niaan\source\repos\caloriestracker\caloriestracker\bin\Debug\netcoreapp2.1\caloriestracker.dll
+C:\Users\niaan\source\repos\caloriestracker\caloriestracker\bin\Debug\netcoreapp2.1\caloriestracker.pdb
+C:\Users\niaan\source\repos\caloriestracker\caloriestracker\obj\Debug\netcoreapp2.1\caloriestracker.csprojAssemblyReference.cache
+C:\Users\niaan\source\repos\caloriestracker\caloriestracker\obj\Debug\netcoreapp2.1\caloriestracker.csproj.CoreCompileInputs.cache
+C:\Users\niaan\source\repos\caloriestracker\caloriestracker\obj\Debug\netcoreapp2.1\caloriestracker.AssemblyInfoInputs.cache
+C:\Users\niaan\source\repos\caloriestracker\caloriestracker\obj\Debug\netcoreapp2.1\caloriestracker.AssemblyInfo.cs
+C:\Users\niaan\source\repos\caloriestracker\caloriestracker\obj\Debug\netcoreapp2.1\caloriestracker.dll
+C:\Users\niaan\source\repos\caloriestracker\caloriestracker\obj\Debug\netcoreapp2.1\caloriestracker.pdb
