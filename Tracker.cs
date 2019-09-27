@@ -33,6 +33,12 @@ namespace caloriestracker
         public decimal TotalCalories { get; private set; }
         #endregion
 
+        #region Constructor
+        public Tracker()
+        {
+           
+        }
+        #endregion
         #region Methods
         /// <summary>
         /// Add calories amount to the tracker
