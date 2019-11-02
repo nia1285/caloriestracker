@@ -25,6 +25,7 @@ namespace caloriestracker
     class Tracker
     {
         internal object dayOfWeek;
+        internal readonly string username;
         #region Properties
         /// <summary>
         /// Name of the user
