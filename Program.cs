@@ -19,8 +19,8 @@ namespace caloriestracker
             {
                 Console.WriteLine("0. exit");
                 Console.WriteLine("1. create tracker");
-                Console.WriteLine("2. enter DaysofWeek");
-                Console.WriteLine("3. enter CaloriesAmount");
+                Console.WriteLine("2. addition");
+                Console.WriteLine("3. print all tracker");
                 
 
                 var option = Console.ReadLine();
@@ -41,16 +41,25 @@ namespace caloriestracker
                             Console.WriteLine($"{i}. {mealtype[i]}");
                         }
                         var TypeofMeal = Enum.Parse<TypeofMeal>(Console.ReadLine());
-                        Console.Write ("Initial Caloriesamount;");
+                        Console.Write ("Initial Caloriesamount: ");
                         var CaloriesAmount = Convert.ToDecimal(Console.ReadLine());
                         var tracker = TrackerApp.Createtracker(username, TypeofMeal, CaloriesAmount);
                         Console.WriteLine($"CT: {Tracker.Username}, CD: {Tracker.CreatedDate}, Meal: {Tracker.TypeofMeal},$CA: {Tracker.CaloriesAmount:1234}");
 
                         break;
                     case "2":
+                      
+
 
                         break;
                     case "3":
+                        Console.Write("username: ");
+                        var trackers = Console.ReadLine();
+                        TrackerApp.GetTrackersbyusername(username);
+                        foreach (var myTracker in trackers)
+                        {
+                            Console.WriteLine($"CT: {Tracker.Username}, CD: {Tracker.CreatedDate}, Meal: {Tracker.TypeofMeal},$CA: {Tracker.CaloriesAmount:1234}");
+                        }
                         break;
                     default:
                         Console.Write("Please select from the valid option");
