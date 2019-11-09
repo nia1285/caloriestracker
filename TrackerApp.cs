@@ -8,14 +8,14 @@ namespace caloriestracker
     static class TrackerApp
     {
         private static List<Tracker> Trackers = new List<Tracker>();
-        private static object trackers;
+        private static List<Transaction> Transactions = new List<Transaction>();
 
-        public static Tracker Createtracker(string Username,
+        public static Tracker Createtracker(int username,
             TypeofMeal Meal, decimal CaloriesAmount)
         {
             var Tracker = new Tracker
             {
-                Username = Username,
+                Username = username,
                 TypeofMeal = Meal,
 
 
@@ -25,8 +25,10 @@ namespace caloriestracker
                 Tracker.Addition(CaloriesAmount);
             }
             Trackers.Add(Tracker);
-            return Tracker;
+                return Tracker;
         }
+
+
 
         public static IEnumerable<Tracker>
             GetTrackersbyusername(string username)
@@ -35,8 +37,7 @@ namespace caloriestracker
         }
         public static void Addition(int username, decimal amount);
 
-        {
-           private var tracker = trackers.SingleorDefault(a => a.username == username);
+        var Tracker = Trackers.SingleorDefault(a => a.username == username);
 
            if (Tracker == null)
         
@@ -44,9 +45,20 @@ namespace caloriestracker
             //Throw exception
             return;
         }
-            Tracker.addition(amount);
+            
+            Tracker.Addition(amount);
 
-       
+            var Transaction = new Transaction
+            {
+                Username = Tracker.username,
+                TransactionDate = DateTime.Now,
+                Meal = TypeOfMeal.Breakfast,
+                TotalCaloriesAmount = Tracker.Amount
+
+            };
+        Transactions.Add(Transaction);
+
+    
         
     }
 }
