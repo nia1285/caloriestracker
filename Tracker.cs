@@ -50,7 +50,7 @@ namespace caloriestracker
         /// <summary>
         /// the date user enters calories
         /// </summary>
-        public DateTime CreatedDate { get; private set; }
+        public DateTime CreatedDate { get; set; }
         public TypeofMeal TypeofMeal { get; internal set; }
         public object Typeofmeal { get; internal set; }
         #endregion

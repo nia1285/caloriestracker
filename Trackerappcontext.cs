@@ -12,19 +12,19 @@ namespace caloriestracker
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Tracker>(entity =>
-           {
-               entity.HasKey(a => a.Username).HasName("PK_Trackers");
+            _ = modelBuilder.Entity<Tracker>((Action<Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Tracker>>)(entity =>
+             {
+                 entity.HasKey(a => a.Username).HasName("PK_Trackers");
 
-               entity.Property(a => a.DayOfWeek).IsRequired();
+                 entity.Property(a => a.DayOfWeek).IsRequired();
 
-               entity.Property(a => a.TypeofMeal).IsRequired();
+                 entity.Property(a => a.TypeofMeal).IsRequired();
 
-               entity.Property(a => a.CaloriesAmount).IsRequired().HasMaxLength(10);
+                 entity.Property((System.Linq.Expressions.Expression<Func<Tracker, decimal>>)(a => (decimal)a.CaloriesAmount)).IsRequired().HasMaxLength(10);
+    
+                 entity.ToTable("Trackers");
 
-               entity.ToTable("Trackers");
-
-           });
+             }));
         }
     }
 }
